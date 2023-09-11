@@ -1,0 +1,14 @@
+.btn{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(208, 247, 247);
+    border: 5px  rgb(145, 131, 0) dashed groove none dotted ;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.container{
+    align-items: center;
+    margin-left: 450px;
+    margin-top: 40px;
+}

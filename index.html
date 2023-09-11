@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <button class="btn" onclick="hideCat()">hide cat</button>
+    <button class="btn" onclick="switchCat()">switch cat</button>
+    <br>
+<br>
+    <img id="cat" width="400px" src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0dHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1400&q=60" alt="">
+</div>
+    <script>
+let image = document.getElementById('cat')
+
+
+const hideCat = () =>{
+    image.hidden ?
+    image.hidden = false : 
+    image.hidden = true
+}
+
+const switchCat = () =>{ 
+    let link1 = "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0dHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1400&q=60"
+
+    let link2 ="https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2l0dHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1400&q=60"
+
+    image.src === link1 ?
+    image.src = link2:
+    image.src = link1
+
+}
+    </script>
+</body>
+</html>
